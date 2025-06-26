@@ -12,6 +12,10 @@ import ServiceList from '../components/Services/ServiceList';
 import featureImg from '../assets/images/feature-img.png';
 import videoIcon from '../assets/images/video-icon.png';
 import avatarIcon from '../assets/images/avatar-icon.png';
+import faqImg from '../assets/images/faq-img.png';
+import FaqList from '../components/Faq/Faqlist.jsx';
+import ProviderList from '../components/Providers/ProviderList';
+import Testimonial from '../components/Testimonial/Testimonial.jsx';
 
 
 
@@ -76,7 +80,7 @@ const Home = () => {
         </div>
       </section>
       {/* how it works section */}
-      <section>
+      <section className="py-16 bg-gradient-to-b from-gray-50 to-white">
       <div className="container">
         <div className="lg:w-[470px] mx-auto">
           <h2 className="heading text-center">
@@ -153,15 +157,15 @@ const Home = () => {
       <About/>
       
       {/* service section */}
-      <section>
+      <section className="py-16 bg-gradient-to-b from-gray-50 to-white">
         <div className="container">
-          <div className="xl:w-[470px] mx-auto">
+          <div className="xl:w-[470px] mx-auto ">
             <h2 className="heading text-center">Our services</h2>
             <p className="text__para text-center">
               We offer comprehensive home services, from routine maintenance to renovations.
             </p>
           </div>
-          <ServiceList/>
+          <ServiceList/>         
         </div>
       </section>
 
@@ -192,7 +196,6 @@ const Home = () => {
                 alt="Virtual treatment illustration" 
               />
               
-              {/* Floating appointment card */}
               <div className="absolute w-[150px] lg:w-[248px] bg-white shadow-md rounded-[10px] p-3 lg:p-4 -bottom-[30px] left-0 lg:bottom-[100px] lg:left-5 z-20">
                 <div className="flex items-center justify-between">
                   <div className="flex items-center gap-[6px] lg:gap-3">
@@ -227,6 +230,42 @@ const Home = () => {
           </div>
         </div>
       </section>
+
+      {/* helper section*/}
+      <section className="py-16 bg-gradient-to-b from-gray-50 to-white">
+        <div className="container">
+          <div className="xl:w-[470px] mx-auto">
+            <h2 className="heading text-center">Top Local Service Providers</h2>
+            <p className="text_para text-center">
+              Your go-to guide for the best local services. Discover expert providers in your area with ease.
+            </p>
+          </div>
+          <ProviderList/>
+        </div>
+      </section>
+
+      {/* faq section*/}
+      <section>
+        <div className="container">
+          <div className="flex justify-between gap-[50px] lg:gap-5 ">
+            <div className="w-1/2 hidden md:block">
+              <img src={faqImg} alt="" className='rounded-lg h-50 w-50' />
+            </div>
+            <div className="w-full md:w-1/2">
+              <h2 className="heading">Most questions by our customers</h2>
+              <FaqList/>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* testimonial section */}
+      <section>
+        <div className="container">
+          <Testimonial/>
+        </div>
+      </section>
+      
     </>
   );
 }

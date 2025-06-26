@@ -7,7 +7,7 @@ export const faqs = [
   {
     question: "How quickly can you respond to an emergency service request?",
     content:
-      "We offer 24/7 emergency services with a typical response time of under 2 hours for urgent cases. Just call our hotline, and we’ll dispatch a technician immediately.",
+      "We offer 24/7 emergency services with a typical response time of under 3 minutes and for urgent cases, Just call our hotline, and we’ll dispatch a technician immediately.",
   },
   {
     question: "Are your technicians licensed and insured?",
