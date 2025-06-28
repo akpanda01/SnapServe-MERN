@@ -31,7 +31,7 @@ const Signup = () => {
   };
 
   return (
-    <section className="px-3 xl:px-0 bg-gradient-to-br from-teal-100 via-blue-50 to-cyan-100">
+    <section className="px-3 xl:px-0 bg-[url('./assets/images/mask.png')] bg-cover bg-no-repeat">
       <div className="max-w-[1170px] mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-2">
 
@@ -41,13 +41,13 @@ const Signup = () => {
             </figure>
           </div>
 
-          <div className="rounded-l-lg lg:pl-16 py-10">
-            <h3 className="text-headingColor text-[22px] leading-9 font-bold mb-10">
+          <div className="rounded-l-lg lg:pl-16 py-3">
+            <h3 className="text-headingColor text-[22px] leading-9 font-bold mb-5">
               Create an <span className="text-primaryColor">account</span>
             </h3>
 
             <form onSubmit={submitHandler}>
-              <div className="space-y-5 mb-5">
+              <div className="space-y-3 mb-2">
               {/* Name Field */}
               <div>
                 <input
@@ -181,8 +181,6 @@ const Signup = () => {
                   Login
                 </Link>
               </p>
-
-
               </div>
             </form>
           </div>

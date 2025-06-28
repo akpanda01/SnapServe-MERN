@@ -20,10 +20,10 @@ const socialLinks = [
 
 const quickLinks = [
   { path: "/home", display: "Home" },
-  { path: "/about", display: "About" },
+  { path: "/home", display: "About" },
   { path: "/services", display: "Services" },
   { path: "/blog", display: "Blog" },
-  { path: "/find-a-provider", display: "Find Helper" },
+  { path: "/providers", display: "Find Helper" },
   { path: "/appointment", display: "Appointment" },
   { path: "/locations", display: "Locations" },
   { path: "/contact", display: "Contact" },
