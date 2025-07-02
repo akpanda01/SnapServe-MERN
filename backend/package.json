@@ -1,0 +1,24 @@
+{
+  "name": "snapserve",
+  "version": "1.0.0",
+  "description": "SnapServe is a MERN stack project that helps users find and track local service providers in real time.",
+  "type":"module",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js",
+    "start-dev": "nodemon index.js"
+  },
+  "author": "Akanksha Panda",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^3.0.2",
+    "cookie-parser": "^1.4.7",
+    "cors": "^2.8.5",
+    "dotenv": "^17.0.0",
+    "express": "^5.1.0",
+    "jsonwebtoken": "^9.0.2",
+    "mongodb": "^6.17.0",
+    "mongoose": "^8.16.1"
+  }
+}
