@@ -99,11 +99,15 @@ const providerSchema = new mongoose.Schema({
     default: 0,
     min: 0
   },
-  status: {  
+  isApproved: {  
     type: String,
     enum: ["pending", "approved", "blocked"],
     default: "pending"
   },
+  appointments: [{
+    type: mongoose.Types.ObjectId, 
+    ref: "Appointment" 
+  }],
   bookings: [{
     type: mongoose.Types.ObjectId, 
     ref: "Booking" 
